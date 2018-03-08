@@ -1,0 +1,25 @@
+*{padding: 0}
+/*通过animation来定义动画的执行时间速度等参数*/
+canvas {
+  animation: myfirst 10s 2 ;
+  -moz-animation: myfirst 10s 2 ;/*firefox*/
+  -webkit-animation: myfirst 10s 2 ;/*safari and chrome*/
+  -o-animation: myfirst 10s 2 ;/*opera*/
+}
+/*通过@keyframes来定义动画的效果，也就是初始状态的样式和结束状态的样式*/
+@keyframes myfirst {
+  from {background:pink;}
+  to {background:yellow;}
+}
+@-moz-keyframes myfirst {
+  from {background:pink;}
+  to {background:yellow;}
+}
+@-webkit-keyframes myfirst {
+  from {background:pink;}
+  to {background:yellow;}
+}
+@-o-keyframes myfirst {
+  from {background:pink;}
+  to {background:yellow;}
+}
